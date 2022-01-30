@@ -18,5 +18,5 @@ deploy:
   bucket_path: "EBApptest" ### S3 folder name under S3 bucket above
   on:
     branch: main
-  access_key_id:  IAM access key generated in AWS but stored in travis c
+  access_key_id:  IAM access key generated in AWS but stored in travis ci
   secret_access_key: IAM secret key generated in IAM of AWS but stored in travis ci
