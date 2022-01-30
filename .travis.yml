@@ -6,9 +6,9 @@ node_js:
 services: 
     - docker
 before_install: 
-    - docker build -t tthang7/my-app -f Dockerfile.dev .
+    - docker build -t tthang7/sample-app -f Dockerfile.dev .
 script:     
-    - docker run -e CI=true tthang7/my-app npm run test -- --coverage --watchAll=false
+    - docker run -e CI=true tthang7/sample-app npm run test -- --coverage --watchAll=false
 deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-2" ### AWS region of your choice
